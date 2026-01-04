@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atlas Drifter - Walking Tour Timeline</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <main class="split">
+        <section class="timeline">
+          <div class="timeline-scroller" id="timelineScroller">
+            <header class="hero">
+              <p class="eyebrow">Atlas Drifter</p>
+              <h1>Footsteps on the Old Coast Road</h1>
+              <p class="lede">
+                A slow travel diary stitched together by rail lines, ferry wakes, and
+                sandstone alleys. Scroll the timeline to trace each stop on the map.
+              </p>
+              <div class="meta">
+                <span>12 days</span>
+                <span>6 stops</span>
+                <span>1 walking tour</span>
+              </div>
+            </header>
+
+            <ol class="stops">
+              <li
+                class="stop active"
+                data-title="Lisbon"
+                data-progress="0.02"
+                data-lat="38.7223"
+                data-lng="-9.1393"
+                data-distance="940 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">01</span>
+                    <div>
+                      <h2>Lisbon, Portugal</h2>
+                      <p class="stop-date">Day 1</p>
+                    </div>
+                  </div>
+                  <p>
+                    A riverside start. Tram bells echo off tiled facades while the
+                    Tagus glows copper at sunset.
+                  </p>
+                  <div class="stop-tags">
+                    <span>Ribeira walk</span>
+                    <span>Pastel crawl</span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="stop"
+                data-title="Seville"
+                data-progress="0.2"
+                data-lat="37.3891"
+                data-lng="-5.9845"
+                data-distance="790 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">02</span>
+                    <div>
+                      <h2>Seville, Spain</h2>
+                      <p class="stop-date">Day 3</p>
+                    </div>
+                  </div>
+                  <p>
+                    Jasmine courtyards and late-night tapeo. The cathedral bells set
+                    the rhythm for the days.
+                  </p>
+                  <div class="stop-tags">
+                    <span>Triana bridge</span>
+                    <span>Orange groves</span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="stop"
+                data-title="Marrakesh"
+                data-progress="0.38"
+                data-lat="31.6295"
+                data-lng="-7.9811"
+                data-distance="540 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">03</span>
+                    <div>
+                      <h2>Marrakesh, Morocco</h2>
+                      <p class="stop-date">Day 5</p>
+                    </div>
+                  </div>
+                  <p>
+                    The medina is a living maze. Spices, lantern light, and the
+                    scent of mint tea fill every turn.
+                  </p>
+                  <div class="stop-tags">
+                    <span>Jemaa el-Fnaa</span>
+                    <span>Souk trails</span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="stop"
+                data-title="Atlas Range"
+                data-progress="0.56"
+                data-lat="31.1360"
+                data-lng="-7.9180"
+                data-distance="320 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">04</span>
+                    <div>
+                      <h2>Atlas Range</h2>
+                      <p class="stop-date">Day 7</p>
+                    </div>
+                  </div>
+                  <p>
+                    Stone villages tucked into switchback climbs. The air thins,
+                    but the views stretch forever.
+                  </p>
+                  <div class="stop-tags">
+                    <span>High pass</span>
+                    <span>Village bread</span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="stop"
+                data-title="Cadiz"
+                data-progress="0.76"
+                data-lat="36.5271"
+                data-lng="-6.2886"
+                data-distance="180 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">05</span>
+                    <div>
+                      <h2>Cadiz, Spain</h2>
+                      <p class="stop-date">Day 10</p>
+                    </div>
+                  </div>
+                  <p>
+                    A sea wind reset. We wander the fortress walls and stay for the
+                    late blue hour.
+                  </p>
+                  <div class="stop-tags">
+                    <span>Harbor walk</span>
+                    <span>Salt flats</span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="stop"
+                data-title="Porto"
+                data-progress="0.94"
+                data-lat="41.1579"
+                data-lng="-8.6291"
+                data-distance="0 km"
+              >
+                <div class="stop-card">
+                  <div class="stop-top">
+                    <span class="stop-index">06</span>
+                    <div>
+                      <h2>Porto, Portugal</h2>
+                      <p class="stop-date">Day 12</p>
+                    </div>
+                  </div>
+                  <p>
+                    The final climb to the river. Port cellars, iron bridges, and a
+                    slow farewell on the steps.
+                  </p>
+                  <div class="stop-tags">
+                    <span>Ribeira dusk</span>
+                    <span>Bridge climb</span>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <aside class="map-panel">
+          <div class="map-card" id="mapCard">
+            <div class="map-header">
+              <div>
+                <p class="map-eyebrow">Walking tour</p>
+                <h3 id="mapLabel">Lisbon</h3>
+              </div>
+              <div class="map-meta">
+                <span id="mapDistance">940 km</span>
+                <span>Slow travel</span>
+              </div>
+            </div>
+
+            <div id="map" class="map-embed" role="region" aria-label="Travel route map"></div>
+
+            <div class="map-footer">
+              <p>Scroll to draw the route. Each stop anchors a story, photo, and walking note.</p>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
